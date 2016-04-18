@@ -1,0 +1,112 @@
+http://ionicframework.com/docs/api/directive/ionView/
+
+$cordovaNetwork
+var isOnline = $cordovaNetwork.isOnline();
+
+// for to access the toast display
+ toast($cordovaToast, configvar.synmessagebackground);
+
+
+
+ $ionicPlatform.registerBackButtonAction(function(event) {
+                            if ($state.$current.name === 'login' || $state.$current.name === 'home') {
+                                event.preventDefault();
+                            } else {
+                                $window.history.back();
+                            }, 100);
+
+
+
+/*********************** View Loaded Event *****************************/
+
+$scope.$on('$ionicView.loaded', function (viewInfo, state) {
+  alert("$ionicView.loaded");
+        console.log('CTRL - $ionicView.loaded', viewInfo, state);
+    });
+
+/********************** View Enter Event ******************************/
+
+$scope.$on('$ionicView.enter', function (viewInfo, state) {
+        alert("$ionicView.enter");
+        console.log('CTRL - $ionicView.enter', viewInfo, state);
+    });
+
+/********************** View Leave Event *******************************/
+
+$scope.$on('$ionicView.leave', function (viewInfo, state) {
+        alert("$ionicView.leave");
+        console.log('CTRL - $ionicView.leave', viewInfo, state);
+    });
+
+/********************** View Before Enter Event **************************/
+
+$scope.$on('$ionicView.beforeEnter', function (viewInfo, state) {
+  alert("$ionicView.beforeEnter");
+        console.log('CTRL - $ionicView.beforeEnter', viewInfo, state);
+    });
+
+
+/********************** View Before Leave Event **************************/
+
+
+$scope.$on('$ionicView.beforeLeave', function (viewInfo, state) {
+  alert("$ionicView.beforeLeave");
+        console.log('CTRL - $ionicView.beforeLeave', viewInfo, state);
+    });
+
+/********************** View After Enter Event **************************/
+
+$scope.$on('$ionicView.afterEnter', function (viewInfo, state) {
+  alert("$ionicView.afterEnter");
+        console.log('CTRL - $ionicView.afterEnter', viewInfo, state);
+    });
+
+/********************** View After Leave Event **************************/
+
+$scope.$on('$ionicView.afterLeave', function (viewInfo, state) {
+  alert("$ionicView.afterLeave");
+        console.log('CTRL - $ionicView.afterLeave', viewInfo, state);
+    });
+
+/********************** View Unloaded Event ****************************/
+
+$scope.$on('$ionicView.unloaded', function (viewInfo, state) {
+  alert("$ionicView.unloaded");
+        console.log('CTRL - $ionicView.unloaded', viewInfo, state);
+    });
+
+/*********************************************************************/
+
+fade in animation for load image
+http://stackoverflow.com/questions/25719408/angularjs-animate-image-on-src-change
+
+--- Directive ---
+
+.directive('fadeIn', function($timeout){
+    return {
+        restrict: 'A',
+        link: function($scope, $element, attrs){
+            $element.addClass("ng-hide-remove");
+            $element.on('load', function() {
+                $element.addClass("ng-hide-add");
+            });
+        }
+    }
+})
+--- Template ---
+
+<img src="{{program.image}}" class="animate-show" fade-in />
+--- CSS ---
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    transition: all linear 0.5s;
+    display: block !important;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active, .animate-show.ng-hide-remove {
+    opacity: 0;
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}

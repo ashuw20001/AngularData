@@ -1,0 +1,421 @@
+/* Empty. Add your own CSS if you like */
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    transition: all linear 0.5s;
+    display: block !important;
+}
+
+.sliderconfig {
+    width: 100%;
+    left: 0px;
+    height: 38% !important;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active, .animate-show.ng-hide-remove {
+    opacity: 0;
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}
+
+.justifyText {
+    text-align: justify;
+}
+
+.slider-slides {
+    height: auto !important;
+}
+
+
+/* Header height */
+
+.mynavbarHome {
+    height: 60px !important;
+}
+
+.intarciaColor {
+    color: orange !important;
+    font-size: 25px !important;
+}
+
+.whiteColor {
+    color: #fff !important;
+}
+
+.newsletterList {
+    padding: 0px;
+}
+
+.newsletterListTitle {
+    background-color: #000;
+    color: #fff;
+    margin: 0px !important;
+    padding: 10px;
+}
+
+.newsletterListDesc {
+    margin: 0px !important;
+    padding: 10px;
+}
+
+.headerIcons {
+    width: 100%;
+    text-align: right;
+}
+
+
+/* Empty. Add your own CSS if you like */
+
+body {
+    background-color: #363636 !important;
+}
+
+.backgroundtheme {
+    background-color: #363636 !important;
+}
+
+.item {
+    border-style: none ! important;
+  
+}
+
+.navbarwh {
+    width: 9%;
+    height: 100%;
+}
+
+.imagelogo2 {
+    width: 105px;
+    height: 68%;
+}
+
+.headerheight {
+    height: 40%;
+    width: 100%;
+    padding: 0px;
+}
+
+.imagesize {
+    height: 100%;
+    width: 100%;
+}
+
+.logoimage {
+    height: 100%;
+}
+
+.post-content {
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    /*opacity: 0.5;*/
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    padding: 0% 10%;
+}
+
+.imagesize {
+    position: relative;
+}
+
+.textcontent {
+    font-size: 23px !important;
+    color: #fff !important;
+    text-align: left;
+}
+
+.fontcontent {
+    font-size: 23px !important;
+    color: #fff !important;
+    margin-top: 10px !important;
+}
+
+.fontcolour {
+    color: #EB840D !important;
+}
+
+.logosection {
+    height: 80px;
+    width: 100%;
+    position: relative;
+}
+
+.contectsection {
+    top: 40% !important;
+    background-color: #363636;
+}
+
+.imglogoint {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.formsection {}
+
+.buttonbackground {
+    background-color: transparent !important;
+    margin-top: -10px;
+}
+
+.footerimg {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footertext {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.bar-footbar {
+    background-image: none !important;
+    background: none;
+}
+
+.forgotcolor {
+    color: #fff;
+}
+
+.orangebtn {
+    background-color: #FF8E0A;
+    color: #fff;
+}
+
+.passwordinput {
+    margin-top: 10px;
+}
+
+.textbackground {
+    background-color: transparent !important;
+}
+
+*, *::before, *::after {
+    box-sizing: content-box;
+}
+
+
+/*left navbar css 3 3 2016*/
+
+.itemfirstchild {
+    background-color: #1b1b1b;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.itemfirstchild p {
+    color: #fff !important;
+}
+
+.itemlist {
+    background-color: #363636;
+    font-size: 14px;
+}
+
+.itemlist .item {
+    background-color: #363636;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.useridfont {
+    font-size: 18px !important;
+}
+
+.iconsize {
+    font-size: 25px !important;
+}
+
+.itemlist a {
+    border-color: #4E4E4E;
+}
+
+.bar .button.button-icon .icon::before, .bar .button.button-icon::before, .bar .button.button-icon.icon-left::before, .bar .button.button-icon.icon-right::before, .bar button.button-icon .icon::before, .bar button.button-icon::before, .bar button.button-icon.icon-left::before, .bar button.button-icon.icon-right::before {
+    font-size: 25px !important;
+}
+
+.itemlist .item:hover {
+    background-color: #FC7F2B !important;
+}
+
+.subheaderposition {
+    background-color: #fc7f2b;
+    top: 60px !important;
+}
+
+.filtersections {
+    color: #000;
+    float: left;
+    width: 17%;
+}
+
+.butonright {
+    border-radius: 50%;
+    color: #fc7f2b !important;
+    float: right;
+    font-weight: bold !important;
+    line-height: 5px !important;
+    margin-top: -41px;
+}
+
+.ion-input-select {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    font-size: 1rem;
+    height: 45px;
+    line-height: 35px;
+    margin-left: 15%;
+    margin-top: -5px;
+    text-align: left;
+    text-indent: 20px;
+    width: 70%;
+}
+
+.gobtn {
+    float: right;
+    position: relative;
+    width: 10%;
+}
+
+.dropdown {
+    background-image: url("../img/whiteicon.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.listwidth {
+    float: left;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.listwidth .list .item-checkbox .checkbox-input .checkbox input::before, .checkbox-icon::before {
+    border-radius: 0px !important;
+}
+
+.listwidth .list .item-checkbox .checkbox-input .checkbox input, .checkbox-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.checkbox-icon {
+    margin-top: 5px !important;
+}
+
+.divcomlplete {}
+
+.listwidth .list {
+    background-color: #C65B15 !important;
+}
+
+.listwidth .list .item-checkbox {
+    background-color: #c65b15 !important;
+    border: 0 none;
+    padding-left: 45px;
+}
+
+.nonefont {
+    padding-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.listwidth .list .item-checkbox:hover {
+    background-color: #51280C !important;
+}
+
+.slider-leftarrow {
+    position: absolute;
+    left: 15px;
+    top: 15%;
+    z-index: 8;
+}
+
+.slider-rightarrow {
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    z-index: 8;
+}
+
+
+/*.slider
+{
+    height: 300px !important;
+}*/
+
+.imgSlide {
+    height: 215px;
+    min-width: 100%;
+}
+
+.slider-pager {
+    bottom: 27px;
+}
+
+
+/*.ion-input-select--large,
+.ion-input-select,
+select {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  padding: auto 0;
+  overflow:hidden;
+  box-sizing:border-box;
+
+}
+
+.ion-input-select--large {
+  width:420px;
+  font-size:1.6rem;
+  background-image: url(http://i.imgur.com/7rGM4IX.png);
+  text-indent:40px;
+  padding:1.2rem 0;
+}
+
+.ion-input-select {
+  background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    font-size: 1rem;
+    height: 45px;
+    margin-left: 5%;
+    margin-top: -5px;
+    text-indent: 20px;
+    width: 70%;
+}
+.ion-input-select:hover
+{
+   background: #C65B15;
+}
+
+option {
+  background:#C65B15;
+}
+option:hover
+{
+    background-color: #51280C;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+:focus {
+  outline:none;
+}*/
