@@ -114,3 +114,30 @@ http://stackoverflow.com/questions/25719408/angularjs-animate-image-on-src-chang
 {{ myString | limitTo: 20 }}{{myString.length > 20 ? '...' : ''}}
 important: &hellip
 Simple and elegant. Instead of '...' you can also use the HTML entity for ellipsis: '&hellip;' –
+
+
+
+// factory example
+
+angular.module('atTheMoviesApp', [])
+  .controller('GetMoviesCtrl', 
+    function($log, $scope, movieService) {
+     $scope.getMovieListing = function(movie) {
+       var promise = 
+           movieService.getMovie('avengers');
+       promise.then(
+          function(payload) { 
+              $scope.listingData = payload.data;
+          },
+          function(errorPayload) {
+              $log.error('failure loading movie', errorPayload);
+          });
+     };
+  })
+  .factory('movieService', function($http) {
+    return {
+      getMovie: function(id) {
+         return $http.get('/api/v1/movies/' + id);
+      }
+    }
+  });
