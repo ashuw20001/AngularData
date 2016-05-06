@@ -1,3 +1,11 @@
+// backbutton enable
+$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+  viewData.enableBack = true;
+}); 
+
+
+
+
 http://ionicframework.com/docs/api/directive/ionView/
 
 $cordovaNetwork
