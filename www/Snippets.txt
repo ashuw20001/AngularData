@@ -1,6 +1,6 @@
 // backbutton enable
 $scope.$on('$ionicView.beforeEnter', function (event, viewData) {
-  viewData.enableBack = true;
+  viewData.enableBack = false;
 }); 
 
 
