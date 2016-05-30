@@ -1,3 +1,9 @@
+﻿
+Angular translator
+https://www.thepolyglotdeveloper.com/2014/08/internationalization-localization-ionicframework-angular-translate/
+
+
+
 // backbutton enable
 $scope.$on('$ionicView.beforeEnter', function (event, viewData) {
   viewData.enableBack = false;
