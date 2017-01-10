@@ -1,0 +1,57 @@
+package  		com.ffi.fingerprint
+class    		FingerPrintScannerFFI 
+boolean 		isFingerPrintSupport()
+void 			initHardwareForFingerPrint
+
+
+Status code :
+1000 :- success
+1001 :- failed
+"1003", "Lock screen security not enabled in Settings"
+"1004", "Fingerprint authentication permission not enabled"
+"1005", "Register at least one fingerprint in Settings"
+
+
+Permission for 6.
+Integrate Third Party
+ 1. Add Javascript Namespace
+  	permissions
+
+	   Function name
+	  	startPermissionActivity	
+		  	Native Mappings
+		  	packagename :- 			com.kony.ffi.permission
+		  	Class name :-			PermissionActivity
+		  	static method name :-	startPermissionActivity
+
+		 getRequestedPermissionsStatus
+		   	Native Mappings
+		  	packagename :- 			com.kony.ffi.permission
+		  	Class name :-			PermissionActivity
+		  	static method name :-	getRequestedPermissionsStatus
+
+
+  2. Add Javascript Namespace
+  	fingerprint
+  	
+	   Function name
+	  	isFingerPrintSupport	
+		  	Native Mappings
+		  	packagename :- 			com.ffi.fingerprint
+		  	Class name :-			FingerPrintScannerFFI 
+		  	static method name :-	isFingerPrintSupport  - return type (boolean)
+
+		 getRequestedPermissionsStatus
+		   	Native Mappings
+		  	packagename :- 			com.ffi.fingerprint
+		  	Class name :-			FingerPrintScannerFFI 
+		  	static method name :-	initHardwareForFingerPrint  - param (success  of datatype Function)
+
+
+Add below stuff in properties
+
+child tag entries under <manifest> tag :
+<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+child tag entries under <application> tag :
+<activity  android:name="com.kony.ffi.permission.PermissionActivity"   android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
